@@ -7,10 +7,6 @@ const BIG_BLOCK = preload("res://Assets/Sprites/BigBlock.png")
 const LONG_BLOCK_GRAY = preload("res://Assets/Sprites/Long-Block-Gray.png")
 const SMALL_BLOCK = preload("res://Assets/Sprites/SmallBlock.png")
 
-
-
-
-
 # ------------------------------> IMPORTS <----------------------------------
 var mouse_in_block: bool = false
 var ignore_input: bool = false
@@ -72,6 +68,7 @@ func _apply_block_size() -> void:
 		BlockSize.RECTBIG:
 			pass
 	add_child(sprite)
+	
 
 # ------------------------------> CUSTOM FUNCS <----------------------------------
 

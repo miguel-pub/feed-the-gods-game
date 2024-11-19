@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvw02dbwhb7rb"]
+[gd_scene load_steps=2 format=3 uid="uid://dvw02dbwhb7rb"]
 
-[ext_resource type="Texture2D" uid="uid://c5sie26gcnlmg" path="res://Assets/Sprites/BigBlock.png" id="1_hkl46"]
 [ext_resource type="Script" path="res://Scenes/Blocks/basic_block.gd" id="1_xa1f3"]
 
 [node name="Block" type="RigidBody2D"]
@@ -9,6 +8,3 @@ script = ExtResource("1_xa1f3")
 
 [node name="Collision64x64" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(29, -32, 32, -29, 32, 29, 29, 32, -29, 32, -32, 29, -32, -29, -29, -32)
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_hkl46")
