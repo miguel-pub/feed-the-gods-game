@@ -11,17 +11,25 @@ config_version=5
 [application]
 
 config/name="feed-the-gods"
+run/main_scene="res://Scenes/Levels/Main/main.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Signal_Debugger="*res://addons/SignalVisualizer/Debugger/SignalDebugger.gd"
-Manager="*res://addons/SimpleSceneManager/Scenes/scene_manager.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SignalVisualizer/plugin.cfg", "res://addons/SimpleSceneManager/plugin.cfg", "res://addons/dev_time_tracker/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray("res://addons/SignalVisualizer/plugin.cfg", "res://addons/dev_time_tracker/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+
+[input]
+
+Click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(181, 6),"global_position":Vector2(195, 76),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
 
 [physics]
 
