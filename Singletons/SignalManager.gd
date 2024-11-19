@@ -1,3 +1,3 @@
 extends Node
 
-signal on_block_removed
+signal on_block_removed(score)
